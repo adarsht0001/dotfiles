@@ -42,15 +42,17 @@
   "menus.dashboard.shortcuts.right.shortcut3.command": "hyprshot -m region",
   "menus.dashboard.shortcuts.enabled": true,
   "menus.dashboard.directories.enabled": false,
-  "theme.bar.menus.monochrome": false,
+  "theme.bar.menus.monochrome": true,
   "bar.customModules.netstat.label": true,
   "bar.customModules.netstat.dynamicIcon": false,
   "theme.bar.buttons.modules.netstat.enableBorder": false,
   "bar.network.truncation": false,
   "menus.dashboard.powermenu.avatar.image": "/home/adarsh/Downloads/shoya_ishida.jpg",
-  "wallpaper.pywal": true,
+  "wallpaper.pywal": false,
   "theme.notification.opacity": 75,
   "notifications.monitor": 0,
   "theme.bar.menus.menu.notifications.height": "40em",
-  "notifications.displayedTotal": 8
+  "notifications.displayedTotal": 8,
+  "wallpaper.enable": false,
+  "theme.bar.menus.buttons.active": "#f5c2e6"
 }
