@@ -46,5 +46,6 @@
   "bar.customModules.netstat.label": true,
   "bar.customModules.netstat.dynamicIcon": false,
   "theme.bar.buttons.modules.netstat.enableBorder": false,
-  "bar.network.truncation": false
+  "bar.network.truncation": false,
+  "menus.dashboard.powermenu.avatar.image": "/home/adarsh/Downloads/shoya_ishida.jpg"
 }
