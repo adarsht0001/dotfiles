@@ -47,5 +47,10 @@
   "bar.customModules.netstat.dynamicIcon": false,
   "theme.bar.buttons.modules.netstat.enableBorder": false,
   "bar.network.truncation": false,
-  "menus.dashboard.powermenu.avatar.image": "/home/adarsh/Downloads/shoya_ishida.jpg"
+  "menus.dashboard.powermenu.avatar.image": "/home/adarsh/Downloads/shoya_ishida.jpg",
+  "wallpaper.pywal": true,
+  "theme.notification.opacity": 75,
+  "notifications.monitor": 0,
+  "theme.bar.menus.menu.notifications.height": "40em",
+  "notifications.displayedTotal": 8
 }
