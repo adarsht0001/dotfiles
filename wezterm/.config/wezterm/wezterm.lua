@@ -13,4 +13,10 @@ config.window_background_opacity = 0.60
 -- Wayland false is required to launch in Hyprland 
 config.enable_wayland = false
 
+color_scheme = "tokyonight",
+automatically_reload_config = true,
+
+adjust_window_size_when_changing_font_size = false,
+hide_tab_bar_if_only_one_tab = true,
+
 return config

@@ -47,7 +47,7 @@
   "bar.customModules.netstat.dynamicIcon": false,
   "theme.bar.buttons.modules.netstat.enableBorder": false,
   "bar.network.truncation": false,
-  "menus.dashboard.powermenu.avatar.image": "/home/adarsh/Downloads/shoya_ishida.jpg",
+  "menus.dashboard.powermenu.avatar.image": "/home/adarsh/Downloads/astronaut.png",
   "wallpaper.pywal": true,
   "theme.notification.opacity": 100,
   "notifications.monitor": 0,
@@ -63,7 +63,7 @@
   "theme.bar.opacity": 100,
   "theme.bar.buttons.workspaces.hover": "#f5c2e7",
   "theme.bar.buttons.workspaces.occupied": "#f2cdcd",
-  "theme.bar.buttons.workspaces.active": "#99c1f1",
+  "theme.bar.buttons.workspaces.active": "#f5c2e7",
   "menus.clock.weather.enabled": false,
   "notifications.position": "top right",
   "notifications.clearDelay": 100,
@@ -71,5 +71,10 @@
   "bar.windowtitle.truncation": true,
   "bar.windowtitle.class_name": true,
   "theme.bar.buttons.windowtitle.enableBorder": false,
-  "bar.windowtitle.custom_title": true
+  "bar.windowtitle.custom_title": true,
+  "theme.bar.menus.menu.dashboard.profile.name": "#99c1f1",
+  "theme.bar.buttons.workspaces.available": "#89dceb",
+  "theme.bar.buttons.windowtitle.text": "#f5c2e7",
+  "theme.bar.buttons.windowtitle.icon": "#f5c2e7",
+  "theme.bar.buttons.workspaces.border": "#f5c2e7"
 }
