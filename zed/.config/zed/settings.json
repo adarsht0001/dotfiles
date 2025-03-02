@@ -1,6 +1,9 @@
 {
+  "features": {
+    "edit_prediction_provider": "supermaven"
+  },
   "icon_theme": "VSCode Icons (Dark)",
-  "theme": "Tokyo Night",
+  "theme": "Catppuccin Mocha",
   "active_pane_modifiers": {
     "border_size": 1,
     "inactive_opacity": 0.5,
@@ -71,6 +74,7 @@
     }
   },
   "vim_mode": true,
+  "relative_line_numbers": true,
   "project_panel": {
     "button": true,
     "default_width": 240,
