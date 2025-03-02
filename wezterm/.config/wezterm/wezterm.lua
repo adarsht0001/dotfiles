@@ -17,5 +17,7 @@ config.window_padding = {
 config.window_background_opacity = 0.50
 config.macos_window_background_blur = 400
 
+config.window_close_confirmation = "NeverPrompt"
+
 
 return config

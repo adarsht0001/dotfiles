@@ -17,6 +17,11 @@ plug "romkatv/powerlevel10k"
 plug "chmouel/zsh-select-with-lf"
 plug "marlonrichert/zsh-autocomplete"
 
+# alias
+alias hypr-edit="nvim ~/.config/hypr/hyprland.conf"
+alias wez-edit="nvim ~/.config/wezterm/wezterm.lua" 
+
+
 # HISTORY
 HISTFILE=~/.zsh_history
 export HISTSIZE=5000000
