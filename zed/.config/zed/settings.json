@@ -1,9 +1,9 @@
 {
   "features": {
-    "edit_prediction_provider": "supermaven"
+    "edit_prediction_provider": "copilot"
   },
   "icon_theme": "VSCode Icons (Dark)",
-  "theme": "Catppuccin Mocha",
+  "theme": "Catppuccin Mocha - No Italics",
   "active_pane_modifiers": {
     "border_size": 1,
     "inactive_opacity": 0.5,
@@ -30,7 +30,7 @@
     "close_position": "right",
     "file_icons": true,
     "git_status": true,
-    "always_show_close_button": false
+    "show_close_button": "hover"
   },
   "toolbar": {
     "breadcrumbs": true,
