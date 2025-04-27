@@ -7,7 +7,7 @@ config.enable_wayland = false
 
 
 config.font = wezterm.font("JetBrains Mono")
-config.font_size = 10
+config.font_size = 11
 config.enable_tab_bar = false
 
 config.window_padding = {
