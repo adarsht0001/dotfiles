@@ -2,18 +2,11 @@
   "features": {
     "edit_prediction_provider": "copilot"
   },
-  "icon_theme": "VSCode Icons (Dark)",
-  "theme": "Catppuccin Mocha - No Italics",
-  "active_pane_modifiers": {
-    "border_size": 1,
-    "inactive_opacity": 0.5,
-    "magnification": 0.5
-  },
+  "icon_theme": "VSCode Icons (Light)",
+  "theme": "Tokyo Night",
   "autosave": "on_window_change",
   "buffer_font_family": "JetBrains Mono",
-  "buffer_font_fallbacks": [
-    "Zed Plex Mono"
-  ],
+  "buffer_font_fallbacks": ["Zed Plex Mono"],
   "buffer_font_size": 12,
   "buffer_font_weight": 500,
   "ui_font_family": "JetBrains Mono",
@@ -93,15 +86,23 @@
       "show": "always"
     }
   },
-  "assistant": {
+  "agent": {
+    "inline_assistant_model": {
+      "provider": "copilot_chat",
+      "model": "claude-3-5-sonnet"
+    },
     "default_model": {
-      "provider": "zed.dev",
-      "model": "claude-3-7-sonnet-latest"
+      "provider": "copilot_chat",
+      "model": "claude-3.7-sonnet"
     },
     "version": "2",
     "enabled": true,
     "button": true,
     "dock": "right",
     "default_width": 450
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
   }
 }

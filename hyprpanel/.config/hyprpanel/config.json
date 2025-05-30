@@ -484,5 +484,8 @@
   "theme.matugen": false,
   "wallpaper.image": "/home/adarsh/Downloads/astronaut.png",
   "theme.matugen_settings.scheme_type": "tonal-spot",
-  "theme.matugen_settings.variation": "monochrome_3"
+  "theme.matugen_settings.variation": "monochrome_3",
+  "tear": true,
+  "theme.osd.muted_zero": true,
+  "theme.osd.enable": true
 }
