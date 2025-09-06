@@ -5,7 +5,7 @@
 * {
     padding: 0;
     margin: 0;
-    font-size: 12px;
+    font-size: 10px;
     font-family: "JetBrainsMonoNL Nerd Font Propo";
     border: none;
     border-radius: 0px;
@@ -15,8 +15,8 @@
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 16px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 3px;
+    margin-bottom: 3px;
     font-weight: normal;
     font-style: normal;
     color: @text;
@@ -34,22 +34,10 @@ window#waybar.hidden {
     opacity: 0.1;
 }
 
-#workspaces button {
-    background: @surface;
-    margin: 2px;
-    padding: 0 8px;
-}
-
-#workspaces button.active {
-    color: @primary;
-    margin-right: 0em;
-    transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.68);
-}
-
 /*-----------Tooltip--------------*/
 tooltip {
     background: @surface;
-    border: 2px solid @tertiary;
+    border: 0.5px solid @tertiary;
     border-radius: 12px;
 }
 
@@ -80,7 +68,7 @@ tooltip label {
 }
 
 #clock:hover {
-    background: linear-gradient(135deg, @overlay 0%, @surface 100%);
+    background: @surface;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -99,4 +87,246 @@ tooltip label {
 
 #clock tooltip calendar {
     color: @text;
+}
+
+/*---------------Tray, Clock, Playerctl, Battery, Cpu, Temperature, Colorpicker, Memory, Idle_inhibitor----------------------*/
+#tray,
+#pulseaudio,
+#network,
+#battery,
+#cpu,
+#temperature,
+#custom-colorpicker,
+#memory,
+#custom-pacman,
+#idle_inhibitor,
+#custom-playerctl.backward,
+#custom-playerctl.play,
+#custom-playerctl.foward,
+#custom-todo {
+    background: @surface;
+    margin: 2px;
+    padding: 0 8px;
+}
+
+#tray,
+#pulseaudio,
+#network,
+#battery,
+#custom-todo {
+    color: @on_surface;
+    border-radius: 10px 24px 10px 24px;
+    padding: 0px 25px 0px 25px;
+    margin-left: 5px;
+}
+
+#clock {
+    color: @on_surface;
+    background: @surface;
+    border-radius: 0px 0px 0px 40px;
+    padding: 10px 10px 15px 25px;
+    margin-left: 7px;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+#tray menu * {
+    padding: 0px 5px;
+    transition: all .3s ease;
+}
+
+#tray menu separator {
+    padding: 0px 5px;
+    transition: all .3s ease;
+}
+
+
+/*-----------Playerctl-------------------*/
+#custom-playerctl.backward,
+#custom-playerctl.play,
+#custom-playerctl.foward {
+    background: @surface;
+    font-size: 20px;
+    margin: 2px 0px;
+}
+
+#custom-playerctl.backward:hover,
+#custom-playerctl.play:hover,
+#custom-playerctl.foward:hover {
+    color: @on_surface;
+}
+
+#custom-playerctl.backward {
+    color: @tertiary;
+    border-radius: 24px 0px 0px 10px;
+    padding-left: 16px;
+    margin-left: 7px;
+}
+
+#custom-playerctl.play {
+    color: @on_primary_fixed_variant;
+    padding: 0 5px;
+}
+
+#custom-playerctl.foward {
+    color: @tertiary;
+    border-radius: 0px 10px 24px 0px;
+    padding-right: 12px;
+    margin-right: 7px
+}
+
+#custom-playerlabel {
+    background: @surface;
+    color: @on_surface;
+    border-radius: 24px 10px 24px 10px;
+    padding: 0px 25px 0px 25px;
+    font-weight: bold;
+    margin: 2px;
+}
+
+
+/*---------------Expand---------------*/
+#custom-expand {
+    background: transparent;
+    color: @on_surface;
+    margin: 1px;
+    font-size: 14px;
+}
+
+#custom-expand:hover {
+    color: @primary;
+}
+
+
+/*-----------Group--------------*/
+#group-utility {
+    padding: 0px 5px;
+    transition: all .3s ease;
+}
+
+/*--------------Cpu, Termperature, Colorpicker, Memory, Idle_inhibitor----------------*/
+#custom-colorpicker,
+#cpu,
+#temperature,
+#memory,
+#custom-pacman,
+#power-profiles-daemon {
+    background: @surface;
+    font-size: 12px;
+    margin: 2px 0px;
+    padding: 8px;
+
+}
+
+#cpu {
+    color: @tertiary;
+    border-right: 1px solid @tertiary;
+
+}
+
+#memory {
+    color: @tertiary;
+    border-right: 1px solid @tertiary;
+}
+
+#custom-colorpicker {
+    color: @tertiary;
+    border-right: 1px solid @tertiary;
+}
+
+#power-profiles-daemon {
+    color: @on_surface;
+    border-right: 1px solid @tertiary;
+}
+
+#cpu {
+    color: @tertiary;
+    border-radius: 24px 0px 0px 10px;
+    padding-left: 16px;
+    padding-right: 7px;
+    margin-left: 7px;
+}
+
+#custom-colorpicker,
+#memory,
+#power-profiles-daemon {
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+#temperature {
+    color: @tertiary;
+    border-radius: 0px 10px 24px 0px;
+    padding-right: 12px;
+    padding-left: 7px;
+    margin-right: 7px
+}
+
+
+/*---------Workspaces-----------------*/
+#workspaces {
+    background: @surface;
+    margin: 2px 5px;
+    padding: 5px 5px;
+    border-radius: 16px;
+
+}
+
+#workspaces button {
+    font-weight: bold;
+    padding: 0px 5px;
+    margin: 0px 5px;
+    border-radius: 16px;
+    color: transparent;
+    background: @secondary;
+    transition: all 0.3s ease-in-out;
+}
+
+#workspaces button.active {
+    font-weight: bold;
+    background-color: @primary;
+    color: @text;
+    border-radius: 16px;
+    min-width: 50px;
+    background-size: 400% 400%;
+    transition: all 0.3s ease-in-out;
+}
+
+#workspaces button:hover {
+    font-weight: bold;
+    background-color: @secondary;
+    color: @text;
+    border-radius: 16px;
+    min-width: 50px;
+    background-size: 400% 400%;
+}
+
+#workspaces button.urgent {
+    font-weight: bold;
+    background-color: @primary;
+    color: @text;
+    border-radius: 16px;
+    min-width: 50px;
+    background-size: 400% 400%;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+/*-----------SwayNC & Weather------------*/
+#custom-swaync,
+#custom-weather {
+    font-weight: bold;
+    background: @surface;
+    margin: 2px 5px;
+    padding: 8px 16px;
+    color: @on_surface;
+}
+
+#custom-weather {
+    border-radius: 24px 10px 24px 10px;
+}
+
+#custom-swaync {
+    border-radius: 10px 24px 10px 24px;
 }
