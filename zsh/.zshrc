@@ -1,3 +1,4 @@
+fastfetch
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -20,7 +21,7 @@ plug "marlonrichert/zsh-autocomplete"
 # alias
 alias hypr-edit="nvim ~/.config/hypr/hyprland.conf"
 alias wez-edit="nvim ~/.config/wezterm/wezterm.lua" 
-
+alias nr="npm run"
 
 # HISTORY
 HISTFILE=~/.zsh_history
@@ -61,3 +62,11 @@ export NVM_DIR="$HOME/.nvm"
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+# pnpm
+export PNPM_HOME="/home/adarsh/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end

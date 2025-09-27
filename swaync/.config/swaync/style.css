@@ -63,7 +63,7 @@
     padding: 2px;
     border-radius: 7px;
     color: @primary;
-    background-color: @danger
+    background-color: @danger;
 }
 
 .notification .notification-action {
@@ -111,11 +111,6 @@
     transform: scale(1.1);
 }
 
-/* Specific Google Chat styling */
-.notification-background .notification[data-app-name="Google Chat"] .image {
-    border: 2px solid #00ac47;
-    /* Chat Green */
-}
 
 .inline-reply {
     margin: 2px;
@@ -317,9 +312,9 @@
 .widget-mpris-player button {
     background: @primary;
     color: @text;
-    padding: 6px 40px;
+    padding: 6px 20px;
     margin: 6px 5px;
-    border-radius: 16px;
+    border-radius: 10px;
     border: 0.5px solid @tertiary;
 }
 
@@ -331,7 +326,7 @@
 .mpris-overlay {
     background-color: @surface;
     opacity: 0.9;
-    padding: 15px 10px
+    padding: 15px 10px;
 }
 
 .widget-mpris-album-art {
