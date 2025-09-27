@@ -1,0 +1,86 @@
+[
+  {
+    "context": "Editor",
+    "bindings": {
+      // LSP Navigation
+      "f12": "editor::GoToDefinition",
+      "ctrl-f12": "editor::GoToDefinitionSplit",
+      "shift-f12": "editor::FindAllReferences",
+      "ctrl-shift-f12": "editor::GoToTypeDefinition",
+      "alt-f12": "editor::GoToImplementation",
+
+      // Alternative LSP keybindings
+      "ctrl-click": "editor::GoToDefinition",
+      "cmd-click": "editor::GoToDefinition",
+      "g d": "editor::GoToDefinition",
+      "g D": "editor::GoToTypeDefinition",
+      "g r": "editor::FindAllReferences",
+      "g i": "editor::GoToImplementation",
+
+      // Code actions and refactoring
+      "ctrl-.": "editor::ToggleCodeActions",
+      "cmd-.": "editor::ToggleCodeActions",
+      "f2": "editor::Rename",
+      "ctrl-shift-r": "editor::Rename",
+      "cmd-shift-r": "editor::Rename",
+
+      // Diagnostics
+      "f8": "diagnostics::Deploy",
+      "shift-f8": "editor::GoToPrevDiagnostic",
+      "ctrl-shift-m": "diagnostics::Deploy",
+
+      // Hover and signature help
+      "ctrl-k ctrl-i": "editor::Hover",
+      "cmd-k cmd-i": "editor::Hover",
+      "ctrl-shift-space": "editor::ShowSignatureHelp",
+      "cmd-shift-space": "editor::ShowSignatureHelp",
+
+      // Symbol search
+      "ctrl-t": "file_finder::Toggle",
+      "cmd-t": "file_finder::Toggle",
+      "ctrl-shift-o": "outline::Toggle",
+      "cmd-shift-o": "outline::Toggle",
+      "ctrl-p": "file_finder::Toggle",
+      "cmd-p": "file_finder::Toggle",
+
+      // Format document
+      "ctrl-shift-i": "editor::Format",
+      "cmd-shift-i": "editor::Format",
+      "alt-shift-f": "editor::Format"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      // Workspace-wide search
+      "ctrl-shift-f": "workspace::NewSearch",
+      "cmd-shift-f": "workspace::NewSearch",
+
+      // Project panel
+      "ctrl-shift-e": "workspace::ToggleLeftDock",
+      "cmd-shift-e": "workspace::ToggleLeftDock",
+
+      // Terminal
+      "ctrl-`": "terminal_panel::ToggleFocus",
+      "cmd-`": "terminal_panel::ToggleFocus",
+      "ctrl-shift-`": "workspace::NewTerminal",
+      "cmd-shift-`": "workspace::NewTerminal"
+    }
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "enter": "project_panel::Open",
+      "space": "project_panel::Open"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-shift-c": "terminal::Copy",
+      "cmd-c": "terminal::Copy",
+      "ctrl-shift-v": "terminal::Paste",
+      "cmd-v": "terminal::Paste"
+    }
+  }
+]
