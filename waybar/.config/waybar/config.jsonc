@@ -37,14 +37,10 @@
   },
   /*-----------Weather---------------*/
   "custom/weather": {
-    "format": "{}",
-    "format-alt": "{alt}: {}",
-    "format-alt-click": "click",
-    "interval": 3600,
+    "exec": "$HOME/.config/waybar/scripts/weather.sh",
     "return-type": "json",
-    "exec": "$HOME/.config/waybar/scripts/Weather.py",
-    //"exec": "$HOME/.config/hypr/UserScripts/Weather.sh",
-    //"exec-if": "ping wttr.in -c1",
+    "format": "{}",
+    "interval": 3600,
     "tooltip": true
   },
   /*-----------SwayNC----------------*/
@@ -81,7 +77,7 @@
   "custom/todo": {
     "exec": "~/.config/waybar/scripts/todo.sh",
     "return-type": "json",
-    "format": "{} ",
+    "format": " {}",
     "format-icons": {
       "default": "󰗓",
       "urgent": "󰗓"
@@ -243,11 +239,4 @@
     "restart-interval": 5,
     "signal": 8
   }
-  // "custom/playerlabel": {
-  // 	"exec": "playerctl -a metadata --format '{\"text\": \"🎵 {{artist}} - {{markup_escape(title)}} 🎵\", \"tooltip\": \"🎧 {{playerName}} \\n🎤 {{markup_escape(title)}} \\n🎨 {{artist}} \\n💿 {{album}} \\n⏱️ {{duration(position)}}/{{duration(mpris:length)}} \\n▶️ {{status}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
-  // 	"format": "<span>{}</span>",
-  // 	"max-length": 40,
-  // 	"on-click": "",
-  // 	"return-type": "json",
-  // },
 }
