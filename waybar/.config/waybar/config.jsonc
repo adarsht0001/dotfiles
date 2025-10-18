@@ -25,7 +25,6 @@
     "network",
     "clock"
   ],
-
   /*----------Hyprland Workspace----------*/
   "hyprland/workspaces": {
     "format": "{name}",
@@ -40,11 +39,10 @@
     "exec": "$HOME/.config/waybar/scripts/weather.sh",
     "return-type": "json",
     "format": "{}",
-    "interval": 3600,
+    "interval": 60,
     "tooltip": true
   },
   /*-----------SwayNC----------------*/
-
   "custom/swaync": {
     "tooltip": true,
     "tooltip-format": "Left Click: Launch Notification Center\nRight Click: Do not Disturb",
@@ -66,7 +64,6 @@
     "on-click-right": "swaync-client -d -sw",
     "escape": true
   },
-
   /*------------Theme------------------*/
   "custom/theme": {
     "format": "󰣇",
@@ -162,7 +159,6 @@
   "custom/colorpicker": {
     "format": "{} ",
     "tooltip-format": "Color Picker",
-
     "on-click": "hyprpicker -a"
   },
   "power-profiles-daemon": {
@@ -182,7 +178,6 @@
     "tooltip": true,
     "tooltip-format": "Click to show utilities"
   },
-
   /*-----------Group-------------------*/
   "group/utility": {
     "orientation": "inherit",
