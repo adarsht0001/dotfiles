@@ -1,86 +1,90 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
 [
-  {
-    "context": "Editor",
-    "bindings": {
-      // LSP Navigation
-      "f12": "editor::GoToDefinition",
-      "ctrl-f12": "editor::GoToDefinitionSplit",
-      "shift-f12": "editor::FindAllReferences",
-      "ctrl-shift-f12": "editor::GoToTypeDefinition",
-      "alt-f12": "editor::GoToImplementation",
-
-      // Alternative LSP keybindings
-      "ctrl-click": "editor::GoToDefinition",
-      "cmd-click": "editor::GoToDefinition",
-      "g d": "editor::GoToDefinition",
-      "g D": "editor::GoToTypeDefinition",
-      "g r": "editor::FindAllReferences",
-      "g i": "editor::GoToImplementation",
-
-      // Code actions and refactoring
-      "ctrl-.": "editor::ToggleCodeActions",
-      "cmd-.": "editor::ToggleCodeActions",
-      "f2": "editor::Rename",
-      "ctrl-shift-r": "editor::Rename",
-      "cmd-shift-r": "editor::Rename",
-
-      // Diagnostics
-      "f8": "diagnostics::Deploy",
-      "shift-f8": "editor::GoToPrevDiagnostic",
-      "ctrl-shift-m": "diagnostics::Deploy",
-
-      // Hover and signature help
-      "ctrl-k ctrl-i": "editor::Hover",
-      "cmd-k cmd-i": "editor::Hover",
-      "ctrl-shift-space": "editor::ShowSignatureHelp",
-      "cmd-shift-space": "editor::ShowSignatureHelp",
-
-      // Symbol search
-      "ctrl-t": "file_finder::Toggle",
-      "cmd-t": "file_finder::Toggle",
-      "ctrl-shift-o": "outline::Toggle",
-      "cmd-shift-o": "outline::Toggle",
-      "ctrl-p": "file_finder::Toggle",
-      "cmd-p": "file_finder::Toggle",
-
-      // Format document
-      "ctrl-shift-i": "editor::Format",
-      "cmd-shift-i": "editor::Format",
-      "alt-shift-f": "editor::Format"
-    }
-  },
-  {
-    "context": "Workspace",
-    "bindings": {
-      // Workspace-wide search
-      "ctrl-shift-f": "workspace::NewSearch",
-      "cmd-shift-f": "workspace::NewSearch",
-
-      // Project panel
-      "ctrl-shift-e": "workspace::ToggleLeftDock",
-      "cmd-shift-e": "workspace::ToggleLeftDock",
-
-      // Terminal
-      "ctrl-`": "terminal_panel::ToggleFocus",
-      "cmd-`": "terminal_panel::ToggleFocus",
-      "ctrl-shift-`": "workspace::NewTerminal",
-      "cmd-shift-`": "workspace::NewTerminal"
-    }
-  },
-  {
-    "context": "ProjectPanel",
-    "bindings": {
-      "enter": "project_panel::Open",
-      "space": "project_panel::Open"
-    }
-  },
-  {
-    "context": "Terminal",
-    "bindings": {
-      "ctrl-shift-c": "terminal::Copy",
-      "cmd-c": "terminal::Copy",
-      "ctrl-shift-v": "terminal::Paste",
-      "cmd-v": "terminal::Paste"
-    }
-  }
+	{
+		"context": "Editor && VimControl && !VimWaiting && !menu",
+		"bindings": {
+			"space g g": [
+				"task::Spawn",
+				{ "task_name": "LazyGit", "reveal_target": "center" }
+			],
+			"space f": "workspace::ToggleZoom",
+			"space g b": "git::CheckoutBranch",
+			"space t": "terminal_panel::ToggleFocus",
+			"space space": "file_finder::Toggle",
+			"space h i": "editor::ToggleInlayHints",
+			"g r": "editor::FindAllReferences",
+			"shift-k": "editor::Hover",
+			"space l a": "editor::ToggleCodeActions",
+			"space l r": "editor::Rename",
+			"space l f": "editor::Format",
+			"space l l": "diagnostics::Deploy",
+			"g c c": "editor::ToggleComments",
+			"space o": "tab_switcher::Toggle",
+			"space e": "workspace::ToggleLeftDock",
+			"space p": "outline::Toggle",
+			"space v": "editor::GoToDefinitionSplit"
+		}
+	},
+	{
+		"context": "Terminal",
+		"use_key_equivalents": true,
+		"bindings": {
+			// Key-bindings for being in terminal go to editor
+			"space f f": "file_finder::Toggle",
+			"space g e": "terminal_panel::ToggleFocus"
+		}
+	},
+	{
+		"context": "Workspace",
+		"bindings": {
+			// "shift shift": "file_finder::Toggle"
+		}
+	},
+	{
+		"context": "Editor && vim_mode == insert && !VimWaiting && !menu",
+		"bindings": {
+			"j k": "vim::NormalBefore"
+		}
+	},
+	{
+		"context": "Editor && vim_mode == normal",
+		"bindings": {
+			"space space": "file_finder::Toggle",
+			"shift l": "pane::ActivateNextItem",
+			"shift h": "pane::ActivatePreviousItem",
+			"space v": "pane::SplitVertical",
+			"space s": "pane::SplitHorizontal",
+			"space w d": "pane::CloseActiveItem",
+			"space w h": "workspace::ActivatePreviousPane",
+			"space w l": "workspace::ActivatePreviousPane",
+			"space e": "workspace::ToggleRightDock"
+		}
+	},
+	{
+		"context": "Workspace && not_editing",
+		"bindings": {
+			"space e": "workspace::ActivateNextWindow"
+			// "shift shift": "file_finder::Toggle"
+		}
+	},
+	{
+		"context": "Editor",
+		"bindings": {
+			// "j k": ["workspace::SendKeystrokes", "escape"]
+		}
+	},
+	{
+		"context": "!Editor && TabSwitcher",
+		"bindings": {
+			"d": "tab_switcher::CloseSelectedItem",
+			"j": ["workspace::SendKeystrokes", "down"],
+			"k": ["workspace::SendKeystrokes", "up"]
+		}
+	}
 ]

@@ -39,7 +39,7 @@
     "exec": "$HOME/.config/waybar/scripts/weather.sh",
     "return-type": "json",
     "format": "{}",
-    "interval": 60,
+    "interval": 30,
     "tooltip": true
   },
   /*-----------SwayNC----------------*/

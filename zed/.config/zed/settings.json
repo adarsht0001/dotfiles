@@ -151,7 +151,7 @@
   // Theme config and styles
   "icon_theme": {
     "light": "VSCode Icons (Dark)",
-    "dark": "VSCode Icons (Dark)"
+    "dark": "VSCode Great Icons Theme"
   },
   "theme": "Halcyon",
   "ui_font_size": 12,
@@ -257,7 +257,7 @@
   "terminal": {
     "minimum_contrast": 60,
     "font_size": 12,
-    "font_family": "MesloLGS NF"
+    "font_family": "JetBrains Mono"
   },
   "title_bar": {
     "show_branch_icon": true,
@@ -305,12 +305,12 @@
   },
   "unnecessary_code_fade": 0.7,
   "agent": {
-    "default_profile": "ask",
+    "default_profile": "write",
     "always_allow_tool_actions": true,
     "default_view": "text_thread",
     "default_model": {
       "provider": "copilot_chat",
-      "model": "gpt-4.1"
+      "model": "claude-sonnet-4"
     },
     "inline_alternatives": [
       {
@@ -355,7 +355,7 @@
     ],
     "background.appearance": "blurred",
     "border": "#363a4f15",
-    "border.variant": "#00000000",
+    "border.variant": "#00000060",
     "border.focused": "#b7bdf8",
     "border.selected": "#c6a0f6",
     "border.transparent": "#a6da95",
@@ -365,7 +365,7 @@
     "background": "#00000099",
     "element.background": "#181926",
     "element.hover": "#363a4f",
-    "element.active": "#00000000",
+    "element.active": "#00000060",
     "element.selected": "#363a4f4d",
     "element.disabled": "#6e738d",
     "drop_target.background": "#c6a0f690",
@@ -387,13 +387,13 @@
     "status_bar.background": "#00000099",
     "title_bar.background": "#00000099",
     "title_bar.inactive_background": "#181926d9",
-    "toolbar.background": "#00000000",
-    "tab_bar.background": "#00000000",
-    "tab.inactive_background": "#00000000",
+    "toolbar.background": "#00000060",
+    "tab_bar.background": "#00000060",
+    "tab.inactive_background": "#00000060",
     "tab.active_background": "#0a0a0a90",
     "search.match_background": "#8bd5ca33",
-    "panel.background": "#00000000",
-    "panel.focused_border": "00000000",
+    "panel.background": "#00000060",
+    "panel.focused_border": "00000060",
     "panel.indent_guide": "#363a4f99",
     "panel.indent_guide_active": "#5b6078",
     "panel.indent_guide_hover": "#c6a0f6",
@@ -403,13 +403,13 @@
     "scrollbar.thumb.background": "#8087a280",
     "scrollbar.thumb.hover_background": "#6e738d",
     "scrollbar.thumb.border": "#c6a0f6",
-    "scrollbar.track.background": "#00000000",
-    "scrollbar.track.border": "#00000000",
+    "scrollbar.track.background": "#00000060",
+    "scrollbar.track.border": "#00000060",
     "editor.foreground": "#cad3f5",
-    "editor.background": "#00000000",
-    "editor.gutter.background": "#00000000",
+    "editor.background": "#00000060",
+    "editor.gutter.background": "#00000060",
     "editor.subheader.background": "#1e2030",
-    "editor.active_line.background": "#00000000",
+    "editor.active_line.background": "#00000060",
     "editor.highlighted_line.background": "#f4dbd612",
     "editor.line_number": "#ffffff20",
     "editor.active_line_number": "#f4dbd690",
@@ -421,7 +421,7 @@
     "editor.document_highlight.write_background": "#a5adcb29",
     "editor.indent_guide": "#363a4f99",
     "editor.indent_guide_active": "#5b6078",
-    "terminal.background": "#00000000",
+    "terminal.background": "#00000060",
     "terminal.ansi.background": "#24273a",
     "terminal.foreground": "#cad3f5",
     "terminal.dim_foreground": "#8087a2",

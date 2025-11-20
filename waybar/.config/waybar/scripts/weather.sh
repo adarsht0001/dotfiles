@@ -41,7 +41,7 @@ get_weather_text() {
   2) echo "Partly Cloudy" ;;
   3) echo "Overcast" ;;
   45 | 48) echo "Fog" ;;
-  51 | 53 | 55 | 80w) echo "Drizzle" ;;
+  51 | 53 | 55 | 80) echo "Drizzle" ;;
   56 | 57) echo "Freezing Drizzle" ;;
   61 | 63 | 81) echo "Rain" ;;
   65 | 82) echo "Heavy Rain" ;;
