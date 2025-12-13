@@ -10,7 +10,7 @@ after-login-command = []
 # 'after-startup-command' is run after 'after-login-command'
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
 after-startup-command = [
-  'exec-and-forget borders active_color=0xff33ccff inactive_color=0xff1a1a1a width=2.0'
+  'exec-and-forget borders active_color=0xff33ccff inactive_color=0xff1a1a1a width=3.0'
 ]
 # Start AeroSpace at login
 start-at-login = true
@@ -22,7 +22,7 @@ enable-normalization-opposite-orientation-for-nested-containers = true
 # See: https://nikitabobko.github.io/AeroSpace/guide#layouts
 # The 'accordion-padding' specifies the size of accordion padding
 # You can set 0 to disable the padding feature
-accordion-padding = 30
+accordion-padding = 50
 
 # Possible values: tiles|accordion
 default-root-container-layout = 'tiles'
@@ -49,6 +49,11 @@ automatically-unhide-macos-hidden-apps = false
 [key-mapping]
     preset = 'qwerty'
 
+[workspace-to-monitor-force-assignment]
+    1 = "main"                            # Monitor sequence number from left to right. 1-based indexing
+    2 = "secondary"                       # Main monitor
+    3 = "secondary"                  # Non-main monitor in case when there are only two monitors
+
 # Gaps between windows (inner-*) and between monitor edges (outer-*).
 # Possible values:
 # - Constant:     gaps.outer.top = 8
@@ -62,7 +67,7 @@ automatically-unhide-macos-hidden-apps = false
     inner.vertical =   8
     outer.left =       5
     outer.bottom =     5
-    outer.top =        10
+    outer.top =        5
     outer.right =      5
 
 # 'main' binding mode declaration
@@ -148,6 +153,8 @@ automatically-unhide-macos-hidden-apps = false
     # See: https://nikitabobko.github.io/AeroSpace/commands#mode
     alt-shift-semicolon = 'mode service'
 
+
+#   The first matching pattern will be used
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
 [mode.service.binding]
