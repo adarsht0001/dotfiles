@@ -1,0 +1,12 @@
+# desktop config
+alt - 1 : skhd -k "ctrl - 1"
+alt - 2 : skhd -k "ctrl - 2"
+alt - 3 : skhd -k "ctrl - 3"
+alt - 4 : skhd -k "ctrl - 4"
+alt - 5 : skhd -k "ctrl - 5"
+
+# apps config
+alt - c : open -a /Applications/Google\ Chrome.app
+alt - v : open -a /Applications/Visual\ Studio\ Code.app
+alt - z : open -a /Applications/Zed.app
+alt - b : open -a /Applications/Zen.app
