@@ -165,6 +165,10 @@
 			"space w s": "pane::SplitDown",
 			"space w v": "pane::SplitRight",
 			"space w d": "pane::CloseAllItems",
+			"space w h": "workspace::ActivatePaneLeft",
+			"space w l": "workspace::ActivatePaneRight",
+			"space w k": "workspace::ActivatePaneUp",
+			"space w j": "workspace::ActivatePaneDown",
 			// Jump to hunks
 			"g j": "editor::GoToHunk",
 			"g k": "editor::GoToPreviousHunk",
