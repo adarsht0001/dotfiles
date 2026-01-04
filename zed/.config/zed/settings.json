@@ -1,9 +1,5 @@
 {
-	"lsp_document_colors": "inlay",
 	"theme": "Ayu Dark",
-	"prettier": {
-		"allowed": true,
-	},
 	"active_pane_modifiers": {
 		"border_size": 0.5,
 	},
@@ -129,6 +125,7 @@
 		},
 		"hunk_style": "unstaged_hollow",
 	},
+	"show_completions_on_input": true,
 	"hard_tabs": true,
 	"indent_guides": {
 		"enabled": true,
@@ -361,7 +358,7 @@
 		"border.disabled": "#6e738d",
 		"elevated_surface.background": "#0a0a0a",
 		"surface.background": "#0000008c",
-		"background": "#00000070",
+		"background": "#00000090",
 		"element.background": "#181926",
 		"element.hover": "#363a4f",
 		"element.active": "#00000020",

@@ -111,6 +111,7 @@
 			"space g h r": "git::Restore",
 			"space g h R": "git::RestoreFile",
 			"space g b": "git::Blame",
+			"space g c": "git::CheckoutBranch",
 			// Open markdown preview
 			"space m p": "markdown::OpenPreview",
 			"space m P": "markdown::OpenPreviewToTheSide",
@@ -159,6 +160,8 @@
 			// Telescope
 			"space f f": "file_finder::Toggle",
 			"space space": "file_finder::Toggle",
+			// zed settings
+			"space :": "command_palette::Toggle",
 			// Terminal
 			"space t": "workspace::ToggleBottomDock",
 			// Windows management
@@ -201,6 +204,7 @@
 			"n": ["workspace::SendKeystrokes", "n z z z v"],
 			"shift-n": ["workspace::SendKeystrokes", "shift-n z z z v"],
 			"g r": "editor::FindAllReferences",
+			"g d": "editor::GoToDefinition",
 		},
 	},
 	{
