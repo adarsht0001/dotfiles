@@ -151,7 +151,7 @@
 	// Theme config and styles
 	"icon_theme": {
 		"light": "Catppuccin Macchiato",
-		"dark": "VSCode Great Icons Theme",
+		"dark": "Colored Zed Icons Theme Dark",
 	},
 	"ui_font_size": 12,
 	"ui_font_family": "JetBrains Mono",
@@ -174,7 +174,12 @@
 				},
 				"prettier",
 			],
-			"language_servers": ["typescript-language-server", "eslint", "vtsls"],
+			"language_servers": [
+				"typescript-language-server",
+				"eslint",
+				"vtsls",
+				"biome",
+			],
 		},
 		"TSX": {
 			"tab_size": 2,
@@ -183,6 +188,7 @@
 				"typescript-language-server",
 				"eslint",
 				"tailwindcss-language-server",
+				"biome",
 			],
 		},
 		"JSONC": {
@@ -215,7 +221,7 @@
 				},
 				"prettier",
 			],
-			"language_servers": ["typescript-language-server", "eslint"],
+			"language_servers": ["typescript-language-server", "eslint", "biome"],
 		},
 		"HTML": {
 			"tab_size": 2,
