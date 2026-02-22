@@ -106,6 +106,7 @@
 					"reveal_target": "center",
 				},
 			],
+			"space g p": "git_panel::ToggleFocus",
 			"space g h D": "git::Diff",
 			"space g h d": "editor::ExpandAllDiffHunks",
 			"space g h r": "git::Restore",
@@ -156,7 +157,7 @@
 			"space c f": "editor::Format",
 			"space c s": "workspace::Save",
 			// File explorer
-			"space e": "workspace::ToggleRightDock",
+			"space e": "project_panel::ToggleFocus",
 			// Telescope
 			"space f f": "file_finder::Toggle",
 			"space space": "file_finder::Toggle",

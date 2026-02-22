@@ -1,4 +1,7 @@
 {
+	"edit_predictions": {
+		"provider": "copilot",
+	},
 	"theme": "Ayu Dark",
 	"active_pane_modifiers": {
 		"border_size": 0.5,
@@ -88,9 +91,6 @@
 		},
 	},
 	"lsp_highlight_debounce": 50,
-	"features": {
-		"edit_prediction_provider": "zed",
-	},
 	"format_on_save": "on",
 	"formatter": "language_server",
 	"file_types": {
@@ -288,6 +288,7 @@
 		"default_width": 300,
 	},
 	"git_panel": {
+		"tree_view": true,
 		"sort_by_path": true,
 		"button": true,
 		"dock": "right",
@@ -304,22 +305,6 @@
 		"indent_size": 10,
 	},
 	"unnecessary_code_fade": 0.7,
-	"agent": {
-		"default_profile": "write",
-		"always_allow_tool_actions": true,
-		"default_view": "text_thread",
-		"default_model": {
-			"provider": "copilot_chat",
-			"model": "claude-sonnet-4",
-		},
-		"inline_alternatives": [
-			{
-				"provider": "copilot_chat",
-				"model": "gpt-4o",
-			},
-		],
-		"play_sound_when_agent_done": true,
-	},
 	"file_scan_inclusions": [".env*"],
 	"file_scan_exclusions": ["!.env*"],
 	// "experimental.theme_overrides": {
@@ -364,7 +349,7 @@
 		"border.disabled": "#6e738d",
 		"elevated_surface.background": "#0a0a0a",
 		"surface.background": "#0000008c",
-		"background": "#00000090",
+		"background": "#00000099",
 		"element.background": "#181926",
 		"element.hover": "#363a4f",
 		"element.active": "#00000020",
@@ -386,7 +371,7 @@
 		"icon.disabled": "#6e738d",
 		"icon.placeholder": "#5b6078",
 		"icon.accent": "#c6a0f6",
-		"status_bar.background": "#00000099",
+		"status_bar.background": "#00000090",
 		"title_bar.background": "#00000099",
 		"title_bar.inactive_background": "#181926d9",
 		"toolbar.background": "#00000020",
